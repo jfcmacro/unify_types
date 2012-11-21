@@ -15,6 +15,9 @@ addList(PList_t,void*);
 PList_t
 joinTwoLists(PList_t, PList_t);
 
+PList_t
+getTailFromList(PList_t);
+
 #endif
 
 

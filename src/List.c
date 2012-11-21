@@ -30,3 +30,10 @@ joinTwoLists(PList_t firstL, PList_t secondL) {
   prev->next = secondL;
   return firstL;
 }
+
+PList_t
+getTailFromList(PList_t head) {
+  PList_t ret = head ? head->next : head;
+  free(head);
+  return ret;
+}

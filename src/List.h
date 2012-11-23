@@ -6,18 +6,23 @@ typedef struct List {
   struct List* next;
 } List_t, *PList_t;
 
+PList_t
+newPList_t(void*);
 
 PList_t
-newList(void*);
-PList_t
-addList(PList_t,void*);
+emptyPList_t();
 
 PList_t
-joinTwoLists(PList_t, PList_t);
+addPList_t(PList_t,void*);
 
 PList_t
-getTailFromList(PList_t);
+joinTwoPList_ts(PList_t, PList_t);
 
+PList_t
+getTailFromPList_t(PList_t);
+
+void*
+getElemFromPList_t(PList_t);
 #endif
 
 
